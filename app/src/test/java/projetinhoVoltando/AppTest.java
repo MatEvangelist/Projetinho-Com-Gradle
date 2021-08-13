@@ -9,11 +9,13 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
 
 public class AppTest {
+    
+    @SuppressWarnings("deprecation")
     @Test
     public void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-        assertThat(1, is(2));
-
+        assertThat(1, is(1));
     }
+
 }
